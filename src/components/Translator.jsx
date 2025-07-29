@@ -32,7 +32,7 @@ const Translator = () => {
 
   const handleTranslate = async () => {
     try {
-      const response = await axios.get("https://tata-innovent-backend.onrender.com", {
+      const response = await axios.post("https://tata-innovent-backend.onrender.com", {
         text: inputText,
         targetLanguage,
       });
