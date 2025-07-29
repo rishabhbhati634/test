@@ -80,7 +80,7 @@ const InCarAssistantDashboard = () => {
     setInputText("");
     setIsAssistantTyping(true);
     try {
-      const response = await fetch("https://tata-innovent-backend.onrender.com", {
+      const response = await fetch("https://tata-innovent-backend.onrender.com/api/openai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
