@@ -80,7 +80,7 @@ const InCarAssistantDashboard = () => {
     setInputText("");
     setIsAssistantTyping(true);
     try {
-      const response = await fetch("https://tata-innovent-backend.onrender.com/api/openai", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/openai/translate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -90,6 +90,7 @@ const InCarAssistantDashboard = () => {
           targetLanguage,
         })
       });
+
       const data = await response.json();
       const result = data.translatedText || data.response;
       
