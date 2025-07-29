@@ -17,7 +17,7 @@ const InCarAssistantDashboard = () => {
     { sender: "assistant", text: "Hi, I'm Leaty. How can I help you today?" }
   ]);
   const [inputText, setInputText] = useState("");
-  const [targetLanguage, setTargetLanguage] = useState("fr");
+  const [targetLanguage, setTargetLanguage] = useState("en");
   const [listening, setListening] = useState(false);
   const [recognition, setRecognition] = useState(null);
   const chatEndRef = useRef(null);
